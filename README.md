@@ -41,7 +41,7 @@ Follow the detailed tutorial in the accompanying article to set up and deploy th
 ## Project Structure
 
 ```
-demo-app/
+supabase-task-manager-demo/
 ├── app/                    # Next.js app directory
 │   ├── auth/              # Authentication pages
 │   ├── dashboard/         # Protected dashboard
