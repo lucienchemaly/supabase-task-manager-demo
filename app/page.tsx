@@ -32,7 +32,7 @@ export default function Home() {
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <div className="space-y-4">
           <h1 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600">
-            Task Manager 2
+            Task Manager
           </h1>
           <p className="text-2xl text-gray-600 dark:text-gray-300">
             Built with Supabase & Next.js
