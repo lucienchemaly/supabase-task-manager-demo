@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="1000" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Gradients -->
     <linearGradient id="userGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -36,7 +36,7 @@
   </defs>
   
   <!-- Background -->
-  <rect width="1200" height="800" fill="#FAFAFA"/>
+  <rect width="1200" height="1000" fill="#FAFAFA"/>
   
   <!-- Title -->
   <text x="600" y="40" text-anchor="middle" font-family="Arial, sans-serif" 
@@ -102,79 +102,107 @@
   <text x="850" y="285" text-anchor="middle" font-family="Arial, sans-serif" 
         font-size="9" fill="#424242">TypeScript • Tailwind CSS</text>
   
-  <!-- Backend Layer -->
-  <rect x="50" y="360" width="1100" height="120" rx="15" ry="15" 
-        fill="url(#backendGradient)" stroke="#F57C00" stroke-width="2" 
+  <!-- Supabase Managed Backend (Large Container) -->
+  <rect x="50" y="360" width="1100" height="480" rx="15" ry="15" 
+        fill="url(#backendGradient)" stroke="#F57C00" stroke-width="3" 
         filter="url(#dropshadow)"/>
-  <text x="600" y="390" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="18" font-weight="bold" fill="#212121">
-    🔧 SUPABASE BACKEND SERVICES
+  <text x="600" y="395" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="20" font-weight="bold" fill="#212121">
+    🔧 SUPABASE MANAGED BACKEND
   </text>
   
-  <!-- Backend Services -->
-  <rect x="200" y="410" width="200" height="50" rx="8" ry="8" 
+  <!-- Backend Services Layer -->
+  <text x="600" y="440" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="14" font-weight="bold" fill="#424242">
+    Backend Services
+  </text>
+  
+  <rect x="250" y="460" width="220" height="70" rx="8" ry="8" 
         fill="#FFEBEE" stroke="#D32F2F" stroke-width="1"/>
-  <text x="300" y="430" text-anchor="middle" font-family="Arial, sans-serif" 
+  <text x="360" y="485" text-anchor="middle" font-family="Arial, sans-serif" 
         font-size="12" font-weight="bold" fill="#212121">🔑 Authentication</text>
-  <text x="300" y="445" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="10" fill="#424242">signInWithPassword • signUp • signOut</text>
+  <text x="360" y="500" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">signInWithPassword</text>
+  <text x="360" y="515" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">signUp • signOut</text>
   
-  <rect x="430" y="410" width="200" height="50" rx="8" ry="8" 
+  <rect x="500" y="460" width="220" height="70" rx="8" ry="8" 
         fill="#FFF3E0" stroke="#F57C00" stroke-width="1"/>
-  <text x="530" y="430" text-anchor="middle" font-family="Arial, sans-serif" 
+  <text x="610" y="485" text-anchor="middle" font-family="Arial, sans-serif" 
         font-size="12" font-weight="bold" fill="#212121">🌐 REST API</text>
-  <text x="530" y="445" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="10" fill="#424242">SELECT • INSERT • UPDATE • DELETE</text>
+  <text x="610" y="500" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">Auto-generated endpoints</text>
+  <text x="610" y="515" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">CRUD operations</text>
   
-  <rect x="660" y="410" width="200" height="50" rx="8" ry="8" 
+  <rect x="750" y="460" width="220" height="70" rx="8" ry="8" 
         fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1"/>
-  <text x="760" y="430" text-anchor="middle" font-family="Arial, sans-serif" 
+  <text x="860" y="485" text-anchor="middle" font-family="Arial, sans-serif" 
         font-size="12" font-weight="bold" fill="#212121">📊 Session Management</text>
-  <text x="760" y="445" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="10" fill="#424242">getSession • getUser • JWT</text>
+  <text x="860" y="500" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">getSession • getUser</text>
+  <text x="860" y="515" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">JWT tokens</text>
   
-  <!-- Database Layer -->
-  <rect x="50" y="520" width="1100" height="120" rx="15" ry="15" 
-        fill="url(#databaseGradient)" stroke="#7B1FA2" stroke-width="2" 
-        filter="url(#dropshadow)"/>
-  <text x="600" y="550" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="18" font-weight="bold" fill="#212121">
-    🗄️ POSTGRESQL DATABASE
+  <!-- RLS Security Layer -->
+  <text x="600" y="613" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="14" font-weight="bold" fill="#424242">
+    Security Layer
   </text>
   
-  <!-- Database Tables -->
-  <rect x="250" y="570" width="180" height="50" rx="8" ry="8" 
-        fill="#FFEBEE" stroke="#D32F2F" stroke-width="1"/>
-  <text x="340" y="590" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="12" font-weight="bold" fill="#212121">👥 auth.users</text>
-  <text x="340" y="605" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="10" fill="#424242">id • email • password</text>
+  <rect x="150" y="620" width="900" height="70" rx="8" ry="8" 
+        fill="#FFEBEE" stroke="#D32F2F" stroke-width="2"/>
+  <text x="600" y="645" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="12" font-weight="bold" fill="#212121">🛡️ ROW LEVEL SECURITY (RLS)</text>
+  <text x="600" y="660" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">Intercepts queries • Checks permissions</text>
+  <text x="600" y="675" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">Filters data by user_id</text>
   
-  <rect x="460" y="570" width="180" height="50" rx="8" ry="8" 
+  <!-- PostgreSQL Database Layer -->
+  <text x="600" y="753" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="14" font-weight="bold" fill="#424242">
+    PostgreSQL Database
+  </text>
+  
+  <rect x="250" y="760" width="200" height="70" rx="8" ry="8" 
         fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1"/>
-  <text x="550" y="590" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="12" font-weight="bold" fill="#212121">📝 public.tasks</text>
-  <text x="550" y="605" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="10" fill="#424242">title • description • completed</text>
+  <text x="350" y="785" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="12" font-weight="bold" fill="#212121">👥 auth.users</text>
+  <text x="350" y="800" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">id • email</text>
+  <text x="350" y="815" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">password</text>
   
-  <rect x="670" y="570" width="180" height="50" rx="8" ry="8" 
-        fill="#FFEBEE" stroke="#D32F2F" stroke-width="1"/>
-  <text x="760" y="590" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="12" font-weight="bold" fill="#212121">🛡️ RLS Policies</text>
-  <text x="760" y="605" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="10" fill="#424242">User-scoped data access</text>
+  <rect x="500" y="760" width="200" height="70" rx="8" ry="8" 
+        fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1"/>
+  <text x="600" y="785" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="12" font-weight="bold" fill="#212121">📝 public.tasks</text>
+  <text x="600" y="800" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">title • description</text>
+  <text x="600" y="815" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">completed</text>
+  
+  <rect x="750" y="760" width="200" height="70" rx="8" ry="8" 
+        fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1"/>
+  <text x="850" y="785" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="12" font-weight="bold" fill="#212121">⚙️ Triggers</text>
+  <text x="850" y="800" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">updated_at</text>
+  <text x="850" y="815" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#424242">timestamps</text>
   
   <!-- Security Layer -->
-  <rect x="50" y="680" width="1100" height="80" rx="15" ry="15" 
+  <rect x="50" y="880" width="1100" height="80" rx="15" ry="15" 
         fill="url(#securityGradient)" stroke="#D32F2F" stroke-width="2" 
         filter="url(#dropshadow)"/>
-  <text x="600" y="710" text-anchor="middle" font-family="Arial, sans-serif" 
+  <text x="600" y="910" text-anchor="middle" font-family="Arial, sans-serif" 
         font-size="18" font-weight="bold" fill="#212121">
-    🔒 SECURITY LAYERS
+    🔒 INFRASTRUCTURE SECURITY
   </text>
-  <text x="600" y="735" text-anchor="middle" font-family="Arial, sans-serif" 
+  <text x="600" y="935" text-anchor="middle" font-family="Arial, sans-serif" 
         font-size="12" fill="#424242">
-    HTTPS/TLS • JWT Authentication • Row Level Security • Form Validation
+    HTTPS/TLS • Network Security • Infrastructure Monitoring • Compliance
   </text>
   
   <!-- Data Flow Arrows -->
@@ -185,27 +213,22 @@
     HTTP/HTTPS
   </text>
   
-  <!-- Frontend to Backend -->
+  <!-- Frontend to Supabase Backend -->
   <line x1="600" y1="320" x2="600" y2="350" stroke="#1976D2" stroke-width="3" 
         marker-end="url(#arrowhead)"/>
   <text x="620" y="340" font-family="Arial, sans-serif" font-size="11" fill="#1976D2">
     @supabase/supabase-js
   </text>
   
-  <!-- Backend to Database -->
-  <line x1="600" y1="480" x2="600" y2="510" stroke="#1976D2" stroke-width="3" 
+  <!-- API to RLS Security Layer -->
+  <line x1="600" y1="530" x2="600" y2="600" stroke="#1976D2" stroke-width="3" 
+        marker-end="url(#arrowhead)"/>  
+  <!-- RLS to PostgreSQL Database -->
+  <line x1="600" y1="690" x2="600" y2="740" stroke="#4CAF50" stroke-width="3" 
+        marker-end="url(#arrowhead)"/>  
+  <!-- Supabase to External Security -->
+  <line x1="600" y1="840" x2="600" y2="880" stroke="#1976D2" stroke-width="3" 
         marker-end="url(#arrowhead)"/>
-  <text x="620" y="500" font-family="Arial, sans-serif" font-size="11" fill="#1976D2">
-    SQL Queries
-  </text>
-  
-  <!-- Database to Security -->
-  <line x1="600" y1="640" x2="600" y2="670" stroke="#1976D2" stroke-width="3" 
-        marker-end="url(#arrowhead)"/>
-  <text x="620" y="660" font-family="Arial, sans-serif" font-size="11" fill="#1976D2">
-    Security Enforcement
-  </text>
-  
   <!-- Side Labels -->
   <text x="20" y="125" text-anchor="middle" font-family="Arial, sans-serif" 
         font-size="11" font-weight="bold" fill="#424242" transform="rotate(-90, 20, 125)">
@@ -215,17 +238,13 @@
         font-size="11" font-weight="bold" fill="#424242" transform="rotate(-90, 20, 260)">
     PRESENTATION LAYER
   </text>
-  <text x="20" y="420" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="11" font-weight="bold" fill="#424242" transform="rotate(-90, 20, 420)">
-    BUSINESS LOGIC
+  <text x="20" y="600" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="11" font-weight="bold" fill="#424242" transform="rotate(-90, 20, 600)">
+    SUPABASE MANAGED BACKEND
   </text>
-  <text x="20" y="580" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="11" font-weight="bold" fill="#424242" transform="rotate(-90, 20, 580)">
-    DATA PERSISTENCE
-  </text>
-  <text x="20" y="720" text-anchor="middle" font-family="Arial, sans-serif" 
-        font-size="11" font-weight="bold" fill="#424242" transform="rotate(-90, 20, 720)">
-    SECURITY
+  <text x="20" y="920" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="11" font-weight="bold" fill="#424242" transform="rotate(-90, 20, 920)">
+    INFRASTRUCTURE SECURITY
   </text>
   
   <!-- Key Features Box -->

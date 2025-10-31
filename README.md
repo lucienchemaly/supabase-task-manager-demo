@@ -1,6 +1,6 @@
 # Supabase Task Manager - Production Deployment Demo
 
-![Architecture Diagram](https://i.imgur.com/q1JALlW.png)
+![Architecture Diagram](https://i.imgur.com/3GjDzcC.png)
 
 A production-ready task management application built with Next.js and Supabase, demonstrating authentication, database operations, and deployment best practices.
 
